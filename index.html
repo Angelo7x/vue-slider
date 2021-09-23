@@ -14,16 +14,16 @@
             <div class="container">
                 <div class="carousel">
                     <div class="carousel-left">
-                        <i class="fas fa-chevron-left"></i>
+                        <i @click="leftImage()" class="fas fa-chevron-left"></i>
                     </div>
                     <div class="carousel-center">
-                        <img src="https://www.newyorkwelcome.net/ecms/image/gotham-city.jpg" alt="">
+                        <img :src="images[imgIndex]" alt="">
                         <div class="circles">
                             <i class="fas fa-circle"></i>
                         </div>
                     </div>
                     <div class="carousel-right">
-                        <i class="fas fa-chevron-right"></i>
+                        <i @click="rightImage()" class="fas fa-chevron-right"></i>
                     </div>
                 </div>
             </div>
